@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10000000
-  per: -1
+  per: -100
 --- !u!61 &165821514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22178,7 +22178,7 @@ MonoBehaviour:
   - spawnTime: 0.2
     spriteType: 1
     health: 15
-    speed: 2.4
+    speed: 1
   levelTime: 0
 --- !u!1 &1509064689
 GameObject:
@@ -23059,7 +23059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLive: 0
   gameTime: 0
-  maxGameTime: 20
+  maxGameTime: 300
   health: 0
   maxHealth: 100
   level: 0
