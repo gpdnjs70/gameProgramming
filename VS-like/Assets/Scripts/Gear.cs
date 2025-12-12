@@ -58,6 +58,6 @@ public class Gear : MonoBehaviour
     void SpeedUp()
     {
         float speed = 3;
-        GameManager.Instance.player.speed = speed + speed * rate;
+        GameManager.Instance.player.speed = speed + (speed * rate);
     }
 }

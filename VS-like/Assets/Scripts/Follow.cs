@@ -11,8 +11,13 @@ public class Follow : MonoBehaviour
         rect = GetComponent<RectTransform>();
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        rect.position = Camera.main.WorldToScreenPoint(GameManager.Instance.player.transform.position);
+        Vector3 screenPos =
+            Camera.main.WorldToScreenPoint(GameManager.Instance.player.transform.position);
+
+        rect.position = screenPos;
+
+        rect.anchoredPosition += new Vector2(-1f, -18f);
     }
 }
