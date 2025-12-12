@@ -60,7 +60,7 @@ public class Weapon : MonoBehaviour
     {
         name = "Weapon" + data.itemId;
         transform.parent = player.transform;
-        transform.localPosition = Vector3.zero;
+        transform.localPosition = Vector3.zero + Vector3.down * 1f;
 
         id = data.itemId;
         damage = data.baseDamage;

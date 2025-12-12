@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [Header("Game Control")]
     public bool isLive;
     public float gameTime;
-    public float maxGameTime = 2 * 10f;
+    public float maxGameTime;
 
     [Header("Player Info")]
     public float health;

@@ -15,7 +15,7 @@ public class spawner : MonoBehaviour
     {
         spawnPoint = GetComponentsInChildren<Transform>();
         //levelTime = GameManager.Instance.maxGameTime / spawnData.Length;
-        levelTime = 10f;
+        levelTime = 20f;
     }
 
     private void Update()
@@ -37,7 +37,10 @@ public class spawner : MonoBehaviour
     {
         GameObject enemy = GameManager.Instance.pool.Get(0);
         enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].position;
-        enemy.GetComponent<Enemy>().Init(spawnData[level]);
+
+        //enemy.GetComponent<Enemy>().Init(spawnData[level]);
+        int spawnLevel = Random.Range(0, level + 1);
+        enemy.GetComponent<Enemy>().Init(spawnData[spawnLevel]);
     }
 }
 
